@@ -28,5 +28,26 @@ namespace Lift
             Lifty2 interForm = new Lifty2();
             interForm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createbutton_Click(object sender, EventArgs e)
+        {
+            dlgcreate dlgcreatewin = new dlgcreate();
+            dlgcreatewin.ShowDialog();
+        }
     }
 }
