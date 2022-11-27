@@ -8,6 +8,8 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Resources;
 
 namespace Lift
 {
@@ -17,22 +19,23 @@ namespace Lift
         {
             
             InitializeComponent();
+            
             switch (theme)
             {
                 case 1:
-                    SoundPlayer simpleSound = new SoundPlayer(@"D:\CProjects\Lift\Lift\res\Letov8bit.wav");
+                    SoundPlayer simpleSound = new SoundPlayer(Application.StartupPath + @"\..\..\res\Letov8bit.wav");
                     simpleSound.Play();
                     break;
                 case 2:
-                    SoundPlayer simpleSound1 = new SoundPlayer(@"D:\CProjects\Lift\Lift\res\Barb_BASS.wav");
+                    SoundPlayer simpleSound1 = new SoundPlayer(Application.StartupPath + @"\..\..\res\Barb_BASS.wav");
                     simpleSound1.Play();
                     break;
                 case 3:
-                    SoundPlayer simpleSound2 = new SoundPlayer(@"D:\CProjects\Lift\Lift\res\Slipknot.wav");
+                    SoundPlayer simpleSound2 = new SoundPlayer(Application.StartupPath + @"\..\..\res\Slipknot.wav");
                     simpleSound2.Play();
                     break;
                 case 4:
-                    SoundPlayer simpleSound3 = new SoundPlayer(@"D:\CProjects\Lift\Lift\res\Dozor.wav");
+                    SoundPlayer simpleSound3 = new SoundPlayer(Application.StartupPath + @"\..\..\res\Dozor.wav");
                     simpleSound3.Play();
                     break;
             }
