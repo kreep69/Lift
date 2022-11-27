@@ -1,7 +1,13 @@
-﻿namespace Lift
+﻿using System.Media;
+
+namespace Lift
 {
     partial class Lifty
+
     {
+
+        public WMPLib.WindowsMediaPlayer WMP = new WMPLib.WindowsMediaPlayer();
+        
         /// <summary>
         /// Обязательная переменная конструктора.
         /// </summary>
@@ -28,6 +34,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            
+            
+            
             this.start_button = new System.Windows.Forms.Button();
             this.pausebutton = new System.Windows.Forms.Button();
             this.stopbutton = new System.Windows.Forms.Button();

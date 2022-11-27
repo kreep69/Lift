@@ -151,7 +151,9 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.create_cancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(1730, 400);
             this.Name = "dlgcreate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Создать пассажира";
             this.Load += new System.EventHandler(this.dlgcreate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
