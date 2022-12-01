@@ -43,7 +43,7 @@ namespace Lift
                     break;
 
             }
-            pass_img = Image.FromFile(Application.StartupPath + @"\..\..\res\passenger.bmp");
+            pass_img = Image.FromFile(Application.StartupPath + @"\..\..\res\passenger.png");
     
 
         }
@@ -93,7 +93,9 @@ namespace Lift
         public void Lifty_Paint(object sender, PaintEventArgs e)
         {
             //Passenger pass = new Passenger(1, 1);
-            e.Graphics.DrawImage(pass_img, position); 
+            //e.Graphics.DrawImage(pass_img, position);
+            pictureBox1.Image = new Bitmap(pass_img);
+            pictureBox1.Location = position;
         }
 
         
