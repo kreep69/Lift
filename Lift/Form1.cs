@@ -15,11 +15,14 @@ namespace Lift
 {
     public partial class Lifty : Form
     {
+        Image pass_img;
+        Point position = new Point(790, 85);
+
         public Lifty(int theme)
         {
-            
+
             InitializeComponent();
-            
+
             switch (theme)
             {
                 case 1:
@@ -38,8 +41,13 @@ namespace Lift
                     SoundPlayer simpleSound3 = new SoundPlayer(Application.StartupPath + @"\..\..\res\Dozor.wav");
                     simpleSound3.Play();
                     break;
+
             }
+            pass_img = Image.FromFile(Application.StartupPath + @"\..\..\res\passenger.bmp");
+    
+
         }
+        
 
         private void Lifty_Load(object sender, EventArgs e)
         {
@@ -72,8 +80,22 @@ namespace Lift
 
         private void createbutton_Click(object sender, EventArgs e)
         {
+            
             dlgcreate dlgcreatewin = new dlgcreate();
             dlgcreatewin.ShowDialog();
         }
+
+        public void timer1_Tick(object sender, EventArgs e)
+        {
+            //pos = pos.Offset(5, 5);
+            this.Invalidate();
+        }
+        public void Lifty_Paint(object sender, PaintEventArgs e)
+        {
+            //Passenger pass = new Passenger(1, 1);
+            e.Graphics.DrawImage(pass_img, position); 
+        }
+
+        
     }
 }

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lift
 {
-    internal class Elevator
+    public class Data
     {
-        Elevator()
-        {
-
-        }
+        int amount_of_floors;
+        int amount_of_lifts;
+        public object[] passenger_mas;
     }
 }

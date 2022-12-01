@@ -59,7 +59,7 @@
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown1.Location = new System.Drawing.Point(12, 46);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            6,
+            8,
             0,
             0,
             0});
@@ -105,7 +105,7 @@
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown2.Location = new System.Drawing.Point(12, 127);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            6,
+            8,
             0,
             0,
             0});
@@ -137,6 +137,7 @@
             this.create_done.TabIndex = 6;
             this.create_done.Text = "Создать пассажира";
             this.create_done.UseVisualStyleBackColor = false;
+            this.create_done.Click += new System.EventHandler(this.create_done_Click);
             // 
             // dlgcreate
             // 

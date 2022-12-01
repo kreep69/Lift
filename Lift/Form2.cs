@@ -62,7 +62,7 @@ namespace Lift
                     theme = 4;
                     break;
                 default:
-                    theme = 0;
+                    theme = 1;
                     break;
 
             }
