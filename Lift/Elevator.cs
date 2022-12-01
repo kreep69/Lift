@@ -9,8 +9,6 @@ namespace Lift
     internal class Elevator
     {
         Elevator()
-        {
-
-        }
+        { }
     }
 }

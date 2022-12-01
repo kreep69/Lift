@@ -1,5 +1,4 @@
 ﻿using System.Media;
-using System.Windows.Forms;
 
 namespace Lift
 {
@@ -35,7 +34,9 @@ namespace Lift
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            
+            
+            
             this.start_button = new System.Windows.Forms.Button();
             this.pausebutton = new System.Windows.Forms.Button();
             this.stopbutton = new System.Windows.Forms.Button();
@@ -44,8 +45,6 @@ namespace Lift
             this.menu_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -56,11 +55,8 @@ namespace Lift
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // start_button
@@ -109,7 +105,7 @@ namespace Lift
             this.flowLayoutPanel1.Controls.Add(this.pausebutton);
             this.flowLayoutPanel1.Controls.Add(this.stopbutton);
             this.flowLayoutPanel1.Controls.Add(this.createbutton);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1207, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(672, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(116, 344);
             this.flowLayoutPanel1.TabIndex = 3;
@@ -132,7 +128,7 @@ namespace Lift
             this.menu_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.menu_button.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menu_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.menu_button.Location = new System.Drawing.Point(1207, 920);
+            this.menu_button.Location = new System.Drawing.Point(672, 388);
             this.menu_button.MaximumSize = new System.Drawing.Size(250, 100);
             this.menu_button.MinimumSize = new System.Drawing.Size(116, 50);
             this.menu_button.Name = "menu_button";
@@ -161,9 +157,6 @@ namespace Lift
             this.panel2.AutoScroll = true;
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.panel14);
-            this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel10);
@@ -183,26 +176,6 @@ namespace Lift
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(1700, 1000);
             this.panel2.TabIndex = 5;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.SystemColors.Control;
-            this.panel14.Location = new System.Drawing.Point(620, 40);
-            this.panel14.Margin = new System.Windows.Forms.Padding(10);
-            this.panel14.Name = "panel14";
-            this.panel14.Padding = new System.Windows.Forms.Padding(10);
-            this.panel14.Size = new System.Drawing.Size(200, 100);
-            this.panel14.TabIndex = 15;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.SystemColors.Control;
-            this.panel13.Location = new System.Drawing.Point(620, 160);
-            this.panel13.Margin = new System.Windows.Forms.Padding(10);
-            this.panel13.Name = "panel13";
-            this.panel13.Padding = new System.Windows.Forms.Padding(10);
-            this.panel13.Size = new System.Drawing.Size(200, 100);
-            this.panel13.TabIndex = 15;
             // 
             // panel12
             // 
@@ -320,25 +293,12 @@ namespace Lift
             this.panel3.Size = new System.Drawing.Size(100, 960);
             this.panel3.TabIndex = 5;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(864, 68);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            
-            // 
             // Lifty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(1335, 982);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu_button);
@@ -352,10 +312,9 @@ namespace Lift
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Paint += new PaintEventHandler(Lifty_Paint);
+
         }
 
         #endregion
@@ -378,10 +337,6 @@ namespace Lift
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button createbutton;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

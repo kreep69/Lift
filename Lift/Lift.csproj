@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
     <Compile Include="Elevator.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -114,8 +113,6 @@
   <ItemGroup>
     <Content Include="res\Letov8bit.wav" />
     <Content Include="res\Barb_BASS.wav" />
-    <Content Include="res\passenger.bmp" />
-    <Content Include="res\passenger.png" />
     <Content Include="res\Slipknot.wav" />
     <Content Include="res\Dozor.wav" />
   </ItemGroup>

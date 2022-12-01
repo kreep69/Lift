@@ -31,14 +31,5 @@ namespace Lift
         {
             this.Close();
         }
-
-        private void create_done_Click(object sender, EventArgs e)
-        {
-
-            //for (int i = 0; i < Data.passenger_mas.Length; i++) { }
-
-            //Form1_Paint();
-            this.Close();
-        }
     }
 }
