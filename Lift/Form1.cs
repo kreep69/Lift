@@ -16,7 +16,7 @@ namespace Lift
     public partial class Lifty : Form
     {
         Image pass_img;
-        Point position = new Point(790, 85);
+        Point position = new Point(588, 60);
 
         public Lifty(int theme)
         {
@@ -70,12 +70,13 @@ namespace Lift
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            timer1.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox1.Location.X <= 480) timer1.Enabled = false;
+            else timer1.Enabled=true;
         }
 
         private void createbutton_Click(object sender, EventArgs e)
@@ -87,15 +88,16 @@ namespace Lift
 
         public void timer1_Tick(object sender, EventArgs e)
         {
-            //pos = pos.Offset(5, 5);
+            position.Offset(-5, 0);
             this.Invalidate();
         }
         public void Lifty_Paint(object sender, PaintEventArgs e)
         {
-            //Passenger pass = new Passenger(1, 1);
-            //e.Graphics.DrawImage(pass_img, position);
-            pictureBox1.Image = new Bitmap(pass_img);
             pictureBox1.Location = position;
+            pictureBox1.Width = 26;
+            pictureBox1.Height = 50;
+            pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            if (pictureBox1.Location.X <= 480) timer1.Enabled=false;
         }
 
         

@@ -9,8 +9,15 @@ namespace Lift
 {
     public class Passenger
     {
+        enum passenger_state
+        {
+            wait,
+            lift_is_coming,
+            in_lift,
+            ended
+        }
 
-        bool wait = false, queue = true, lift_is_coming = false, in_lift = false, ended = false;
+       
         public int x = 790;
         public int y = 85;
         public Image pass_img = Image.FromFile(@"\..\..\res\passenger.png");
@@ -21,6 +28,7 @@ namespace Lift
             
              
         }
+        
     }
 }
  

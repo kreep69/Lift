@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lift
 {
+    
     public class Data
     {
+        string choosed_strat;
         int amount_of_floors;
         int amount_of_lifts;
         public object[] passenger_mas;
+        List<object> passengers;
     }
 }
