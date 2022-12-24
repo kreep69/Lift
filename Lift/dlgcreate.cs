@@ -38,6 +38,7 @@ namespace Lift
             //for (int i = 0; i < Data.passenger_mas.Length; i++) { }
 
             //Form1_Paint();
+
             this.Close();
         }
     }

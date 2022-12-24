@@ -70,7 +70,6 @@
     <Compile Include="Passenger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy_less_time.cs" />
     <EmbeddedResource Include="dlgcreate.resx">
       <DependentUpon>dlgcreate.cs</DependentUpon>
     </EmbeddedResource>

@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lift
 {
-    public interface Manager
+    public class Manager 
     {
-        int find_time(object elevator, object passenger)
+        Data data = new Data();
+        
+        void start_system()
         {
-
+            data
+        }
+        int strategy_less_time(Elevator elev, Passenger pass)
+        {
+            return 0;
         }
     }
 }
