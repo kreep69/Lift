@@ -13,19 +13,30 @@ namespace Lift
     }
     public struct Data
     {
+        
+
         public string choosed_strat;
         int amount_of_floors;
         int amount_of_lifts;
         int pas_numb;
-        public object[] passenger_mas;
+        
         List<object> passengers;
         int get_aof()
         { return amount_of_floors; }
         int get_aol() 
         { return amount_of_floors; }
-        void addPasList()
+        void addPasList(Passenger passenger)
         {
-
+            passengers.Add(passenger);
+            pas_numb++;
+        }
+        public Data(int amount_of_floors, int amount_of_lifts)
+        {
+            this.choosed_strat = "";
+            this.amount_of_floors= amount_of_floors;
+            this.amount_of_lifts= amount_of_lifts;
+            this.passengers = null;
+            this.pas_numb= 0;
         }
     }
     

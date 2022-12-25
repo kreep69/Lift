@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lift
 {
-    internal class Elevator
+    public class Elevator
     {
         int floor, numb_of_pas, dest_floor, max_pas;
         object[] pass_array;
-        Elevator(int max_pas)
+        public Elevator(int max_pas)
         {
             this.max_pas= max_pas;
-            floor = 0;
+            floor = 1;
             numb_of_pas = 0;
             object[] pass_array = new object[max_pas];
             pass_array= null;

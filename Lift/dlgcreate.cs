@@ -34,12 +34,14 @@ namespace Lift
 
         private void create_done_Click(object sender, EventArgs e)
         {
-
-            //for (int i = 0; i < Data.passenger_mas.Length; i++) { }
-
-            //Form1_Paint();
-
+            Passenger passenger = new Passenger(Decimal.ToInt32(numericUpDown1.Value), Decimal.ToInt32(numericUpDown2.Value), );
+            
             this.Close();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

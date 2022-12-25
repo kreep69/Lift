@@ -15,9 +15,8 @@ namespace Lift
         int theme;
         public Lifty2()
         {
-            
+            Data data = new Data(Decimal.ToInt32(numericUpDown1.Value), Decimal.ToInt32(numericUpDown2.Value));
             InitializeComponent();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +24,7 @@ namespace Lift
             this.Hide();
             Lifty mainForm = new Lifty(theme);
             mainForm.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -67,6 +67,20 @@ namespace Lift
 
             }
         }
-       
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

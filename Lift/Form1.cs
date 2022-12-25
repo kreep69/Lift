@@ -20,9 +20,9 @@ namespace Lift
 
         public Lifty(int theme)
         {
-
+            
             InitializeComponent();
-
+            
             switch (theme)
             {
                 case 1:
