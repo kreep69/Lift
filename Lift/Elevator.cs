@@ -8,8 +8,8 @@ namespace Lift
 {
     public class Elevator
     {
-        int floor, numb_of_pas, dest_floor, max_pas;
-        object[] pass_array;
+        public int floor, numb_of_pas, dest_floor, max_pas;
+        public Passenger[] pass_array;
         public Elevator(int max_pas)
         {
             this.max_pas= max_pas;
@@ -18,7 +18,7 @@ namespace Lift
             object[] pass_array = new object[max_pas];
             pass_array= null;
         }
-        void pass_in(Passenger pass)
+        public void pass_in(Passenger pass)
         {
             numb_of_pas++;
             for (int i =0; i<max_pas;i++)
@@ -29,16 +29,16 @@ namespace Lift
                 }
             }
         }
-        void pass_out(Passenger pass) 
+        public void pass_out(Passenger pass) 
         {
 
         }
-        int move_down()
+        public int move_down()
         {
             this.floor--;
             return floor; 
         }
-        int move_up() 
+        public int move_up() 
         {
             this.floor++;
             return floor; 

@@ -9,7 +9,7 @@ namespace Lift
 {
     public class Passenger
     {
-        enum passenger_state
+        public enum passenger_state
         {
             not_spawned,
             wait,
@@ -17,7 +17,8 @@ namespace Lift
             in_lift,
             ended
         }
-        int start_floor, end_floor;
+        public int start_floor, end_floor;
+        public passenger_state state = passenger_state.wait;
        
         public int x = 790;
         public int y = 85;

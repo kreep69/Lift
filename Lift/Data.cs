@@ -16,11 +16,12 @@ namespace Lift
         
 
         public string choosed_strat;
-        int amount_of_floors;
+        public int amount_of_floors;
         int amount_of_lifts;
-        int pas_numb;
+        public int pas_numb;
         
-        List<object> passengers;
+        public List<Passenger> passengers;
+        public List<Elevator> elevators;
         int get_aof()
         { return amount_of_floors; }
         int get_aol() 
@@ -36,6 +37,7 @@ namespace Lift
             this.amount_of_floors= amount_of_floors;
             this.amount_of_lifts= amount_of_lifts;
             this.passengers = null;
+            this.elevators = null;
             this.pas_numb= 0;
         }
     }
